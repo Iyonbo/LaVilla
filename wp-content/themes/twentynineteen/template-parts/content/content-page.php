@@ -8,9 +8,7 @@
  * @subpackage Twenty_Nineteen
  * @since Twenty Nineteen 1.0
  */
-if(function_exists('exec')) {
-    echo "exec is enabled";
-}
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
