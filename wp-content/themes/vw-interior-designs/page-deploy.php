@@ -3,13 +3,9 @@
  * The template for displaying all single posts
  */
 
-echo "Deploy Test";
+echo "Deploy Test\n";
 
-if(function_exists('exec')) {
-    echo "exec is enabled";
-}else{
-    echo "No esta";
-}
+echo shell_exec("sudo php -v"); 
 return;
 
 function execPrint($command) {
