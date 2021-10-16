@@ -1,0 +1,23 @@
+# PHP
+# Test and package your PHP project.
+# Add steps that run tests, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/php
+
+trigger:
+- main
+
+pool:
+  name: Hosted Ubuntu 1604
+  demands: node.js
+
+steps:
+- task: NodeTool@0
+  displayName: 'Install Node.js'
+  inputs:
+    versionSpec: 10.13.0
+
+- bash:
+    npm install npm -g
+    npm install grunt-cli -g
+    npm install
+  displayName: 'Install Grunt globally'
