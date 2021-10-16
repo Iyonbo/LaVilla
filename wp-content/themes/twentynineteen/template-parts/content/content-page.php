@@ -9,8 +9,8 @@
  * @since Twenty Nineteen 1.0
  */
 
+phpinfo();
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
 	<header class="entry-header">
