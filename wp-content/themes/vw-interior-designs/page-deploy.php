@@ -5,6 +5,13 @@
 
 echo "Deploy Test";
 
+if(function_exists('exec')) {
+    echo "exec is enabled";
+}else{
+    echo "No esta";
+}
+return;
+
 function execPrint($command) {
     $result = array();
     exec($command, $result);
