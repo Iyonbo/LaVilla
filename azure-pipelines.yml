@@ -4,23 +4,34 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
 
 trigger:
-- main
+- master
 
 pool:
-  vmImage: ubuntu-latest
-
-variables:
-  phpVersion: 7.2
+  name: Hosted Ubuntu 1604
+  demands: node.js
 
 steps:
-- script: |
-    sudo update-alternatives --set php /usr/bin/php$(phpVersion)
-    sudo update-alternatives --set phar /usr/bin/phar$(phpVersion)
-    sudo update-alternatives --set phpdbg /usr/bin/phpdbg$(phpVersion)
-    sudo update-alternatives --set php-cgi /usr/bin/php-cgi$(phpVersion)
-    sudo update-alternatives --set phar.phar /usr/bin/phar.phar$(phpVersion)
-    php -version
-  displayName: 'Use PHP version $(phpVersion)'
+- task: NodeTool@0
+  displayName: 'Install Node.js'
+  inputs:
+    versionSpec: 10.13.0
 
-- script: composer install --no-interaction --prefer-dist
-  displayName: 'composer install'
+- bash:
+    npm install npm -g
+    npm install grunt-cli -g
+    npm install
+  displayName: 'Install Grunt globally'
+
+- task: Grunt@0
+  displayName: 'Build WordPress with Grunt'
+  inputs:
+    gruntFile: Gruntfile.js
+
+- task: ArchiveFiles@2
+  displayName: 'Archive build files'
+  inputs:
+    rootFolderOrFile: '$(Build.Repository.LocalPath)/build'
+    includeRootFolder: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
