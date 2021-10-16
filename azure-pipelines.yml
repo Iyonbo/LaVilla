@@ -21,17 +21,3 @@ steps:
     npm install grunt-cli -g
     npm install
   displayName: 'Install Grunt globally'
-
-- task: Grunt@0
-  displayName: 'Build WordPress with Grunt'
-  inputs:
-    gruntFile: Gruntfile.js
-
-- task: ArchiveFiles@2
-  displayName: 'Archive build files'
-  inputs:
-    rootFolderOrFile: '$(Build.Repository.LocalPath)/build'
-    includeRootFolder: false
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
