@@ -1,0 +1,272 @@
+/*
+Theme Name: Teczilla Corporate
+Theme URI: 
+Template: teczilla
+Author: avadantathemes
+Author URI: https://www.avadantathemes.com/
+Description:  Teczilla corporate is a child theme of teczilla wordpress theme perfect for corporate, finance , startup etc.It is a Very creative, fully customizable and multipurpose theme.Any website you want to make with this theme will look beautiful and compaitable.It has built in typography also dynamic typography also has unlimited color optiopns in it.The theme suitable for saas application website, architecture, interior design, corporate, corporate, business, decoration, business, furniture, home decor, law firm, corporate, insurance, app landing page, it solutions, shop ecommerce, marketing, gym, blog, travel corporate, construction,  spa salons, industries, Beauty, photography, and many other websites compatible. Service option has icon and image options. Full Width responsive page layout. SEO optimized pages and fast speed loading.Compatible with gutenberg, elemnetor page builder WooCommerce, contact form 7, Jetpack, Google analytics and so many popular premium & free plugins nicely works with teczilla theme. For more theme information, check out Theme demo here at https://www.avadantathemes.com/demo/teczilla-corporate/ and theme instructions here at https://www.avadantathemes.com/documentation/teczilla-free-theme/
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.8.1
+Requires PHP: 5.6
+Text Domain: teczilla-corporate
+Tags: one-column, two-columns, four-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, post-formats, theme-options, threaded-comments,  portfolio
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html/ GPL v3.0 (or later)
+*/
+
+body{
+
+	font-family: 'Inter', sans-serif;
+}
+
+p{
+
+    color: #66686f;
+}
+
+.full-width-header .toolbar-area{
+
+    background: #fff !important;
+    margin-top: -7px;
+    margin-bottom: -19px;
+}
+
+
+.tec-footer .footer-bottom {
+    padding: 10px 0 !important;
+}
+
+.tec-footer .text-right{
+
+    padding-top: 5px;
+}
+
+.full-width-header .toolbar-area .toolbar-sl-share ul li .tec-icons{
+
+color: #000 !important;
+
+}
+
+.comment-respond .comment-form-comment textarea,
+.comment-respond .comment-form-author input,
+.comment-respond .comment-form-email input,
+.comment-respond .comment-form-url input{
+
+    box-shadow: none !important;
+}
+
+.full-width-header .toolbar-area .toolbar-contact ul li,
+.full-width-header .toolbar-area .toolbar-contact ul li a,
+.full-width-header .toolbar-area .toolbar-contact ul li i{
+
+    color: #000;
+}
+
+.current_page_item {
+    background-color:transparent !important;
+	
+}
+.full-width-header .toolbar-area .toolbar-sl-share ul li a {
+    background-color: transparent !important;    
+    color: #fff !important;
+	font-size:22px;
+}
+
+.full-width-header .toolbar-area .toolbar-sl-share ul {
+    text-align: right;
+    margin-right: 0;
+}
+
+
+.full-width-header .teczilla-menu-area {
+    background: #e8151b;
+    position: relative;
+}
+
+
+
+.sidebar{
+
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 26px 30px 10px;
+
+}
+
+.menu>.menu-item>a, .menu .page_item a{
+
+	color: #fff !important;
+}
+
+@media screen and (min-width: 992px){
+.sticky {
+    background: #000 !important;
+}
+}
+
+.teczilla-title{
+	margin-bottom: 0;
+}
+
+.sidebar-widget.widget_block h2{
+
+	color: #1c1b1b;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 800;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+    padding-bottom: 12px;
+}
+
+.sidebar-widget.widget_block h2:after{
+
+        content: "";
+    clear: both;
+    width: 3em;
+    display: block;
+    background: #e8151b;
+    height: 2px;
+    margin: 1em 0 0 -15px;
+}
+
+.menu-sticky{
+
+	box-shadow: none;
+}
+
+.blog-wrap .content-part .blog-meta {
+    padding-left: 0;
+    margin-bottom: 7px;
+}
+
+#scrollUp i {
+    border-radius: 50%;
+}
+
+.error-44{
+	position: relative;
+}
+
+.error-44:before {
+    top: 0;
+    background: #000;
+    position: absolute;
+    content: "";
+    opacity: 0.85;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+
+    .menu-toggle {
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    position: absolute;
+    display: none;
+    top: -25px;
+    font-size: 14px;
+    right: 20px;
+    font-size: 0.875rem;
+    font-size: 20px;
+    font-weight: 800;
+    /* float: right; */
+    margin-top: -40px;
+    text-shadow: none;
+}
+
+
+@media only screen and (max-width: 991px){
+.main-navigation {
+    padding: 0;
+    margin-top: 0;
+}
+
+.full-width-header .tec-agncy-stick {
+    padding-top: 0;
+}
+}
+
+.carousel-control-next-icon:before,
+.carousel-control-prev-icon:before{
+
+	background: #000 !important;
+}
+
+.home-slider .container .slider-caption .slider-bottom .slider-btn{
+
+    color: #fff;
+}
+
+.widget_tag_cloud .wp-block-tag-cloud a{
+
+    color: #fff;
+}
+
+.nav-links .page-numbers.current {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 15px;
+    height: 36px;
+    padding: 11px 18px 9px 12px;
+    width: 36px;
+    margin: 0 10px 10px 0;
+    border-radius: 15%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+}
+
+.nav-links .page-numbers {
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    height: 36px;
+    padding: 6px 15px 16px 13px;
+    width: auto;
+    border-radius: 16%;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+}
+
+.carousel-control-next-icon:before, .carousel-control-prev-icon:before {
+    background: transparent !important;
+}
+
+.sidebar .widget_search{
+
+    padding-top: 16px;
+}
+
+.section-xx .blog-wrap {
+    margin-top: 46px;
+    border: none !important;
+}
+
+.footer-bottom #footer-menu{
+
+    display: inline-flex;
+}
+
+.footer-bottom #footer-menu li {
+    padding-left: 12px;
+}
+
+.logo-area{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
