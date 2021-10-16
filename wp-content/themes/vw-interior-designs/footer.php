@@ -56,7 +56,7 @@
 
     <div id="footer-2">
       	<div class="copyright container">
-            <p><?php vw_interior_designs_credit(); ?> <?php echo esc_html(get_theme_mod('vw_interior_designs_footer_text',__('By VWThemes','vw-interior-designs'))); ?></p>
+            <p><?php echo esc_html(get_theme_mod('vw_interior_designs_footer_text',__('By VWThemes','vw-interior-designs'))); ?></p>
             <?php if( get_theme_mod( 'vw_interior_designs_hide_show_scroll',true) != '' || get_theme_mod( 'vw_interior_designs_resp_scroll_top_hide_show',true) != '') { ?>
                 <?php $vw_interior_designs_theme_lay = get_theme_mod( 'vw_interior_designs_scroll_top_alignment','Right');
                 if($vw_interior_designs_theme_lay == 'Left'){ ?>
