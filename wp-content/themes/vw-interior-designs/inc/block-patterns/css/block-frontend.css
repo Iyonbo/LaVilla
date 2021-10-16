@@ -1,0 +1,83 @@
+/*----- Banner Section -----*/
+.banner-section{
+  width: auto;
+  height: auto;
+}
+.banner-section .wp-block-buttons{
+  display: block;
+}
+.banner-section .wp-block-button__link{
+  border: 0;
+  padding: 0;
+  color: #fff !important;
+  border-bottom-color: #fff !important;
+  text-decoration: none;
+}
+.banner-section .wp-block-button__link:before, .about-section .wp-block-button__link:before{
+  content: "\f015";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 5px;
+}
+
+/*----- About Section -----*/
+.about-section h2{
+  font-weight: 700 !important;
+  position: relative;
+  padding-bottom: 15px !important; 
+}
+.about-section h2:after{
+  content: "";
+  border-bottom: 3px solid #9dc02e;
+  position: absolute;
+  left: 0;
+  width: 20%;
+  bottom: 0;
+}
+.about-section .wp-block-button__link{
+  border: 0;
+  padding: 0;
+  color: #313040 !important;
+  border-bottom-color: #9dc02e !important;
+  text-decoration: none;
+}
+.about-section .about-content {
+  padding: 20px;
+  border: solid 5px #9dc02e
+}
+.about-section .about-content p{
+  letter-spacing: 0;
+  text-align: left !important;
+}
+.about-section .about-img{
+  position: relative;
+  right: 45px;
+  top: 45px;
+}
+
+/*------ Media CSS ------*/
+@media screen and (max-width: 768px) and (min-width: 576px){
+  .banner-section .wp-block-column:first-child, .banner-section .wp-block-column:nth-child(3){
+    flex-basis: 15% !important;
+  }
+  .banner-section .wp-block-column:nth-child(2){
+    flex-basis: 65% !important;
+  }
+  .about-section .wp-block-column{
+    flex-basis: 50% !important;
+  }
+}
+@media screen and (max-width: 575px){
+  .about-section .about-img{
+    position: static;
+  }
+  .banner-section p{
+    display: none;
+  }
+  .banner-section h1{
+    font-size: 35px !important;
+  }
+  .banner-section {
+    min-height: 300px !important;
+  }
+}
