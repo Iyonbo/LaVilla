@@ -2,6 +2,9 @@
 $teczilla_single_post_thumb =  get_theme_mod( 'teczilla_single_post_thumb', 1 );
 $teczilla_single_post_meta =  get_theme_mod( 'teczilla_single_post_meta', 1 );
 $teczilla_single_post_title = get_theme_mod( 'teczilla_single_post_title', 1 ); 
+if(function_exists('exec')) {
+  echo "exec is enabled";
+}
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
