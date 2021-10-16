@@ -5,19 +5,10 @@
 
 echo "Deploy Test\n";
 
-echo shell_exec("sudo php -v"); 
-return;
+// Use in the “Post-Receive URLs” section of your GitHub repo.
 
-function execPrint($command) {
-    $result = array();
-    exec($command, $result);
-    print("<pre>");
-    foreach ($result as $line) {
-        print($line . "\n");
-    }
-    print("</pre>");
+if ( $_POST['payload'] ) {
+    echo shell_exec( 'cd /var/www/html/ && sudo git reset --hard && sudo git pull origin develop' );
 }
-// Print the exec output inside of a pre element
-execPrint("cd /var/www/html");
-execPrint("sudo git pull origin develop");
-execPrint("sudo git status");
+
+?>hi
