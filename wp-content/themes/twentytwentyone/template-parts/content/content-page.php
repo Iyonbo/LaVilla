@@ -12,7 +12,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+	<h1>ESTO SE SUBIO CON DEPLOY</h1>
 	<?php if ( ! is_front_page() ) : ?>
 		<header class="entry-header alignwide">
 			<?php get_template_part( 'template-parts/header/entry-header' ); ?>
@@ -46,7 +46,7 @@
 				sprintf(
 					/* translators: %s: Name of current post. Only visible to screen readers. */
 					esc_html__( 'Edit %s', 'twentytwentyone' ),
-					'<span class="screen-reader-text"> El deploy' . get_the_title() . '</span>'
+					'<span class="screen-reader-text">' . get_the_title() . '</span>'
 				),
 				'<span class="edit-link">',
 				'</span>'
