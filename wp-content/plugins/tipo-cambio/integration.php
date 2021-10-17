@@ -53,6 +53,9 @@ class tipo_de_cambio{
 	    }else{
 	        $resultado = array('status' => false, 'message' => "Ocurrio un error, intentelo más tarde");
 	    }
-    	return $resultado;
+    	return array( 
+			"resultado" => $resultado,
+			"response" => $response,
+		);
 	}
 }
