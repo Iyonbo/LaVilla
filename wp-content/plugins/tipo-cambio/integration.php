@@ -25,7 +25,7 @@ class tipo_de_cambio{
 	public static function getStatusResponse(){
 		// devolver status ver si no hay diffgram
         // var_dump(self::$response);
-		$status = isset(self::$response["TipoCambioDiaResponse"]["TipoCambioDiaResult"]) ? true : false;
+		$status = isset(self::$response["TipoCambioDiaResponse"]) ? true : false;
 		return $status;
 	}
 
@@ -50,7 +50,7 @@ class tipo_de_cambio{
 	    	$response = $this->getResponseContent();
 	    	$resultado = array(
 				'status' => true, 
-				'message' => "Registro Creado",
+				'message' => "Exitoso",
 				'moneda' => 'USD',
 				'fecha' => $response['TipoCambioDiaResult']['CambioDolar']['VarDolar']['fecha'],
 				'cambio' => $response['TipoCambioDiaResult']['CambioDolar']['VarDolar']['referencia']
