@@ -25,3 +25,20 @@ function get_tipo_cambio(){
 	echo json_encode($message);
 	wp_die();
 }
+
+
+add_action('wp_ajax_nopriv_git_deploy', 'git_deploy');
+add_action('wp_ajax_git_deploy', 'git_deploy');
+function git_deploy(){
+    // error_reporting(E_ALL);
+    // ini_set('display_errors', '1');
+	header('Content-type: application/json'); 
+	// echo "Deploy Test\n";
+
+	// Use in the “Post-Receive URLs” section of your GitHub repo.
+
+	// if ( $_POST['payload'] ) {
+		$response = shell_exec( 'cd /var/www/html/ && sudo git reset --hard && sudo git pull origin develop' );
+	// }	
+	wp_send_json($response);
+}
