@@ -61,9 +61,7 @@ class tipo_de_cambio{
 				'message' => "Ocurrio un error, intentelo más tarde"
 			);
 	    }
-    	return array( 
-			"resultado" => $resultado,
-			"response" => $response,
-		);
+    	return $resultado;
+			
 	}
 }
