@@ -24,6 +24,7 @@ function get_tipo_cambio(){
     $message = $integration->getCambio();
 	echo json_encode($message);
 	wp_die();
+	
 }
 
 
