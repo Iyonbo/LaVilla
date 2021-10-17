@@ -21,4 +21,4 @@ steps:
     #npm install grunt-cli -g
     #npm install
     sudo git pull
-  displayName: 'Install Grunt globally'
+  displayName: 'sudo git pull'
