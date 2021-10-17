@@ -25,7 +25,9 @@ function get_tipo_cambio(){
     // ini_set('display_errors', '1');
 	header('Content-type: application/json'); 
 	$data = array(
-		"TipoCambioDia" => ""
+		"Body" => array(
+			"TipoCambioDia" => ""
+		)
 	);
 	$integration = new IntegrationsCambio\tipo_de_cambio($data);
     $message = $integration->getCambio();
