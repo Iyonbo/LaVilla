@@ -16,8 +16,7 @@ class SoapControllerCambio{
 
 
   public function __construct() {
-    $landing = get_field("informacion_landing", "option");
-    $url = $landing["url_servicio"]; 
+    $url = "https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx?wsdl"; 
     self::$wsdl = $url; 
     // self::$wsdl = dirname(__FILE__)."/wsdl.xml";
     self::$error = array(
