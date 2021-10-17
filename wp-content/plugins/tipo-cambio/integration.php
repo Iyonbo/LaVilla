@@ -46,13 +46,21 @@ class tipo_de_cambio{
     	$resultado = array();
     	// var_dump($this->getResponseContent());
     	// var_dump($this->getStatusResponse());
-	    // if ($this->getStatusResponse()) {
+	    if ($this->getStatusResponse()) {
 	    	$response = $this->getResponseContent();
-	    	$resultado = array('status' => true, 'message' => "Registro Creado");
-	    // }else{
-	    //     $resultado = array('status' => false, 'message' => "Ocurrio un error, intentelo más tarde");
-		// 	$error =
-	    // }
+	    	$resultado = array(
+				'status' => true, 
+				'message' => "Registro Creado",
+				'moneda' => 'USD',
+				'fecha' => $response['TipoCambioDiaResult']['CambioDolar']['VarDolar']['fecha'],
+				'cambio' => $response['TipoCambioDiaResult']['CambioDolar']['VarDolar']['referencia']
+			);
+	    }else{
+	        $resultado = array(
+				'status' => false, 
+				'message' => "Ocurrio un error, intentelo más tarde"
+			);
+	    }
     	return array( 
 			"resultado" => $resultado,
 			"response" => $response,
