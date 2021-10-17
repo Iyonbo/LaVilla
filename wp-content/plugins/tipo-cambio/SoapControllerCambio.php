@@ -1,6 +1,6 @@
 <?php 
 namespace SOAPClient; 
-// require_once (dirname(__FILE__)."/nusoap/src/nusoap.php");
+require_once (dirname(__FILE__)."/nusoap/src/nusoap.php");
 
 
 // use nusoap_client;
