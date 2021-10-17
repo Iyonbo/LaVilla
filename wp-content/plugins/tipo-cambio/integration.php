@@ -47,8 +47,6 @@ class tipo_de_cambio{
     	// var_dump($this->getResponseContent());
     	// var_dump($this->getStatusResponse());
 	    // if ($this->getStatusResponse()) {
-	    	var_dump(self::getLastRequest());
-	    	var_dump(self::getLastResponse());
 	    	$response = $this->getResponseContent();
 	    	$resultado = array('status' => true, 'message' => "Registro Creado");
 	    // }else{

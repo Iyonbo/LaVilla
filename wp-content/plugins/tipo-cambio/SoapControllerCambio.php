@@ -93,7 +93,8 @@ class SoapControllerCambio{
       // abort(500, $error);
     }
     // self::$response = reset($response);
-    // self::statusResponse();
+    var_dump(self::statusRequest());
+    var_dump(self::statusResponse());
     // self::responseContent();
     // Log::debug(self::getLastRequest());
 

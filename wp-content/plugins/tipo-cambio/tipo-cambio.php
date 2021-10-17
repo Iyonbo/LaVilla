@@ -11,11 +11,6 @@
 // error_reporting(E_ALL);
 // ini_set('display_errors', '1');
 
-if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page('Tipo de Cambio');
-}
-
-
 require_once (dirname(__FILE__).'/integration.php');
 
 add_action('wp_ajax_nopriv_get_tipo_cambio', 'get_tipo_cambio');
