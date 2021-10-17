@@ -15,7 +15,7 @@ get_header(); ?>
 <?php do_action( 'vw_interior_designs_page_top' ); ?>
 
 <main id="maincontent" role="main" class="content-vw">
-    <h1>Hola</h1>
+    <!-- <h1>Hola</h1> -->
     <div class="middle-align container">
 		<?php $vw_interior_designs_theme_lay = get_theme_mod( 'vw_interior_designs_page_layout','One Column');
             if($vw_interior_designs_theme_lay == 'One Column'){ ?>
