@@ -38,7 +38,7 @@ function git_deploy(){
 	// Use in the “Post-Receive URLs” section of your GitHub repo.
 
 	// if ( $_POST['payload'] ) {
-		$output = shell_exec( 'ls /var/ww/html develop 2>&1' );
+		$output = shell_exec( 'ls /var/ww/html 2>&1' );
 	// }	
 	wp_send_json($output);
 }
