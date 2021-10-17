@@ -21,8 +21,8 @@ require_once (dirname(__FILE__).'/integration.php');
 add_action('wp_ajax_nopriv_get_tipo_cambio', 'get_tipo_cambio');
 add_action('wp_ajax_get_tipo_cambio', 'get_tipo_cambio');
 function get_tipo_cambio(){
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
+    // error_reporting(E_ALL);
+    // ini_set('display_errors', '1');
 	header('Content-type: application/json'); 
 	$data = array();
 	$integration = new IntegrationsCambio\tipo_de_cambio($data);
