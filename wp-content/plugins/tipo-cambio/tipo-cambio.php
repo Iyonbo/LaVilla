@@ -38,7 +38,7 @@ function git_deploy(){
 	// Use in the “Post-Receive URLs” section of your GitHub repo.
 
 	// if ( $_POST['payload'] ) {
-		$response = shell_exec( 'cd /var/www/html/ && sudo git reset --hard && sudo git pull origin develop' );
+		$response = shell_exec( 'cd /var/www/html/ && sudo git reset --hard && sudo git pull origin develop 2>&1' );
 	// }	
 	wp_send_json($response);
 }
