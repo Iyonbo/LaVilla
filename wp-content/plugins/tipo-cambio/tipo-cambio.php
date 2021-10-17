@@ -38,7 +38,9 @@ function git_deploy(){
 	// Use in the “Post-Receive URLs” section of your GitHub repo.
 
 	// if ( $_POST['payload'] ) {
-		$output = shell_exec( 'sudo cd /var/www/html && sudo ls /var/ww/html 2>&1' );
+		$output = array();
+		exec("sudo cd /var/www/html && sudo ls /var/ww/html 2>&1", $output);
+		// $output = shell_exec( 'sudo cd /var/www/html && sudo ls /var/ww/html 2>&1' );
 	// }	
 	wp_send_json($output);
 }
