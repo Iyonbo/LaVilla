@@ -46,13 +46,14 @@ class tipo_de_cambio{
     	$resultado = array();
     	// var_dump($this->getResponseContent());
     	// var_dump($this->getStatusResponse());
-	    if ($this->getStatusResponse()) {
+	    // if ($this->getStatusResponse()) {
 	    	// var_dump($this->getResponseContent());
 	    	$response = $this->getResponseContent();
 	    	$resultado = array('status' => true, 'message' => "Registro Creado");
-	    }else{
-	        $resultado = array('status' => false, 'message' => "Ocurrio un error, intentelo más tarde");
-	    }
+	    // }else{
+	    //     $resultado = array('status' => false, 'message' => "Ocurrio un error, intentelo más tarde");
+		// 	$error =
+	    // }
     	return array( 
 			"resultado" => $resultado,
 			"response" => $response,
