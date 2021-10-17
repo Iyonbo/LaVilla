@@ -39,7 +39,7 @@ function git_deploy(){
 
 	// if ( $_POST['payload'] ) {
 		$output = array();
-		exec("sudo cd /var/www/html && sudo ls /var/ww/html 2>&1", $output);
+		exec("sudo cd /var/www/html && sudo git pull origin develop 2>&1", $output);
 		// $output = shell_exec( 'sudo cd /var/www/html && sudo ls /var/ww/html 2>&1' );
 	// }	
 	wp_send_json($output);
