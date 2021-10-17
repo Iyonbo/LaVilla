@@ -45,8 +45,8 @@ class tipo_de_cambio{
         
     	$resultado = array();
     	// var_dump($this->getResponseContent());
-    	// var_dump($this->getStatusResponse());
-	    if ($this->getStatusResponse()) {
+    	var_dump($this->getStatusResponse());
+	    // if ($this->getStatusResponse()) {
 	    	$response = $this->getResponseContent();
 	    	$resultado = array(
 				'status' => true, 
@@ -55,12 +55,12 @@ class tipo_de_cambio{
 				'fecha' => $response['TipoCambioDiaResult']['CambioDolar']['VarDolar']['fecha'],
 				'cambio' => $response['TipoCambioDiaResult']['CambioDolar']['VarDolar']['referencia']
 			);
-	    }else{
-	        $resultado = array(
-				'status' => false, 
-				'message' => "Ocurrio un error, intentelo más tarde"
-			);
-	    }
+	    // }else{
+	    //     $resultado = array(
+		// 		'status' => false, 
+		// 		'message' => "Ocurrio un error, intentelo más tarde"
+		// 	);
+	    // }
     	return array( 
 			"resultado" => $resultado,
 			"response" => $response,
