@@ -25,21 +25,21 @@
           <label>Tipo de cambio USD 1.00 = GTQ 7.00</label>
           <br><br>
           <label for="">Tipo de conversión<br>
-              <select name="tipo" id="">
+              <select name="tipo" id="" required>
                   <option value="1"> Dolares a Quetzales</option>
                   <option value="2"> Quetzales a Dolares</option>
               </select>
           </label>
           <br><br>
           <label for="">Cantidad<br>
-              <input type="number" name="cantidad" min="1" value="1">
+              <input type="number" name="cantidad" min="1" value="1" required>
           </label>
           <br><br>
           <label for="">Resultado<br>
               <span>323</span>
           </label>
           <br><br>
-          <input class="btn-primary" type="button" value="Convertir">
+          <input class="btn-primary" type="submit" value="Convertir">
       </form>
     </div>
   <div class="clearfix"></div>
