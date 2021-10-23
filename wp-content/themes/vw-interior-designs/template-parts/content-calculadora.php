@@ -36,14 +36,14 @@
           </label>
           <br><br>
           <label for="">Cantidad<br>
-              <input type="number" name="cantidad" min="1" value="1" required>
+              <input type="number" name="cantidad" id="cantidad" min="1" value="1" required>
           </label>
           <br><br>
           <label for="">Resultado<br>
               <span>GTQ <?php echo round($cambio['cambio'], 2)?></span>
           </label>
           <br><br>
-          <input class="btn-primary" type="submit" value="Convertir">
+          <input class="btn-primary" type="button" value="Convertir">
       </form>
     </div>
   <div class="clearfix"></div>
@@ -77,3 +77,12 @@
         background-color: #313040;
     }
 </style>
+<script>
+    (function($){
+        $(document).ready(function(){
+            $(".btn-primary").on("click", function(){
+                alert(Hola);
+            });
+        });
+    })(jQuery);
+</script>
