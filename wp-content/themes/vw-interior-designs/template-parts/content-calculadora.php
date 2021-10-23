@@ -27,7 +27,7 @@
           </label>
           <br><br>
           <label for="">Cantidad<br>
-              <input type="number" name="cantidad">
+              <input type="number" name="cantidad" min="1" value="1">
           </label>
           <br><br>
           <label for="">Resultado<br>
