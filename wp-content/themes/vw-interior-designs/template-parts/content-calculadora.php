@@ -39,3 +39,31 @@
     </div>
   <div class="clearfix"></div>
 </div>
+<style>
+    form {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        color: black;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    .btn-primary{
+        margin: 20px 10px;
+        padding: 5px 10px;
+        background: #9dc02e;
+        border: none;
+        color: white;
+    }
+
+    .btn-primary:hover{
+        background-color: #313040;
+    }
+</style>
