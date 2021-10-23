@@ -9,7 +9,7 @@
 
  if (function_exists("get_tipo_cambio")){
     $cambio = get_tipo_cambio(false);
-    echo(json_decode($cambio));
+    var_dump(json_decode($cambio));
  }
 ?>
 
