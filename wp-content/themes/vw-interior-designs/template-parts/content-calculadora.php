@@ -27,9 +27,9 @@
                 USD 1.00 = GTQ <?php echo round($cambio['cambio'], 2)?>
             </label>
           <br><br>
-          <input type="hidden" name="cambio" value="<?php echo $cambio['cambio']?>">
+          <input type="hidden" name="cambio" id="cambio" value="<?php echo $cambio['cambio']?>">
           <label for="">Tipo de conversión<br>
-                <select name="tipo" id="" required>
+                <select name="tipo" id="tipo" required>
                     <option value="1"> Dolares a Quetzales</option>
                     <option value="2"> Quetzales a Dolares</option>
                 </select>
@@ -40,7 +40,7 @@
           </label>
           <br><br>
           <label for="">Resultado<br>
-              <span>GTQ <?php echo round($cambio['cambio'], 2)?></span>
+              <span id="resultado">GTQ <?php echo round($cambio['cambio'], 2)?></span>
           </label>
           <br><br>
           <input class="btn-primary" type="button" value="Convertir">
@@ -81,7 +81,19 @@
     (function($){
         $(document).ready(function(){
             $(".btn-primary").on("click", function(){
-                alert("Hola");
+                $tipo = $("#tipo option:selected").val();
+                $cantidad = $("#cantidad").val();
+                $cambio = $("#cambio").val();
+                if($tipo == '1'){
+                    $monto = $cantidad*cambio;
+                    $moneda1 = 'USD';
+                    $moneda2 = 'GTQ';
+                }else{
+                    $monto = $cantidad/cambio;
+                    $moneda1 = 'GTQ';
+                    $moneda2 = 'USD';
+                }
+                $("#resultado").html($moneda1+" "+$cantidad.toFixed(2)+" = "+$moneda2+" "+$monto.toFixed(2));
             });
         });
     })(jQuery);
