@@ -10,6 +10,7 @@
  if (function_exists("get_tipo_cambio")){
     $cambio = get_tipo_cambio(false);
     var_dump(json_decode($cambio));
+    echo $cambio;
  }
 ?>
 
