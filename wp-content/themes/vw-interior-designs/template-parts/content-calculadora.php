@@ -18,18 +18,23 @@
       <?php the_content();?>
       <form action="">
           <label>Tipo de cambio USD 1.00 = GTQ 7.00</label>
-          <label for="">Tipo de conversión
+          <br>
+          <label for="">Tipo de conversión<br>
               <select name="tipo" id="">
                   <option value="1"> Dolares a Quetzales</option>
                   <option value="2"> Quetzales a Dolares</option>
               </select>
           </label>
-          <label for="">Cantidad
+          <br>
+          <label for="">Cantidad<br>
               <input type="number" name="cantidad">
           </label>
-          <label for="">Resultado
+          <br>
+          <label for="">Resultado<br>
               <span>323</span>
           </label>
+          <br><br>
+          <input class="btn-primaty" type="button" value="Convertir">
       </form>
     </div>
   <div class="clearfix"></div>
