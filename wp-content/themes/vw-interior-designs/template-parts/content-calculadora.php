@@ -77,7 +77,7 @@
         background-color: #313040;
     }
 
-    .btn-primary:active{
+    .btn-primary:active, .btn-primary:focus{
         background-color: #9dc02e;
     }
 </style>
