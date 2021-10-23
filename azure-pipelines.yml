@@ -12,12 +12,13 @@ pool:
 
 steps:
 - task: NodeTool@0
-  displayName: 'Install Node.js'
-  inputs:
-    versionSpec: 10.13.0
+# displayName: 'Install Node.js'
+ # inputs:
+  #  versionSpec: 10.13.0
 
 - bash:
-    npm install npm -g
-    npm install grunt-cli -g
-    npm install
-  displayName: 'Install Grunt globally'
+   # npm install npm -g
+    #npm install grunt-cli -g
+    #npm install
+    sudo git pull
+  displayName: 'sudo git pull'
