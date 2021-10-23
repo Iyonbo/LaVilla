@@ -82,8 +82,8 @@
         $(document).ready(function(){
             $(".btn-primary").on("click", function(){
                 $tipo = $("#tipo option:selected").val();
-                $cantidad = $("#cantidad").val();
-                $cambio = $("#cambio").val();
+                $cantidad = parseFloat($("#cantidad").val());
+                $cambio = parseFloat($("#cambio").val());
                 if($tipo == '1'){
                     $monto = $cantidad*cambio;
                     $moneda1 = 'USD';
