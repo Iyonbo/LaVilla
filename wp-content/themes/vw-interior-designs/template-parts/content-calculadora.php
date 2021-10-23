@@ -9,7 +9,7 @@
 
  if (function_exists("get_tipo_cambio")){
     $cambio = get_tipo_cambio(false);
-    var_dump($cambio);
+    // var_dump($cambio);
  }
 ?>
 
@@ -81,7 +81,7 @@
     (function($){
         $(document).ready(function(){
             $(".btn-primary").on("click", function(){
-                alert(Hola);
+                alert("Hola");
             });
         });
     })(jQuery);
