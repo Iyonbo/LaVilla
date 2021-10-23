@@ -27,12 +27,12 @@
                 USD 1.00 = GTQ <?php echo round($cambio['cambio'], 2)?>
             </label>
           <br><br>
+          <input type="hidden" name="cambio" value="<?php echo $cambio['cambio']?>">
           <label for="">Tipo de conversión<br>
-              <select name="tipo" id="" required>
-                  <input type="hidden" name="cambio" value="<?php echo $cambio['cambio']?>">
-                  <option value="1"> Dolares a Quetzales</option>
-                  <option value="2"> Quetzales a Dolares</option>
-              </select>
+                <select name="tipo" id="" required>
+                    <option value="1"> Dolares a Quetzales</option>
+                    <option value="2"> Quetzales a Dolares</option>
+                </select>
           </label>
           <br><br>
           <label for="">Cantidad<br>
