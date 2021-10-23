@@ -22,7 +22,7 @@
     <div class="entry-content">
       <?php the_content();?>
       <form action="">
-          <label>
+          <label style="font-size: 18px;">
                 Tipo de cambio <?php echo $cambio['fecha']?><br> 
                 USD 1.00 = GTQ <?php echo round($cambio['cambio'], 2)?>
             </label>
