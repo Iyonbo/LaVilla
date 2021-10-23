@@ -6,6 +6,11 @@
  * @subpackage vw_interior_designs
  * @since VW Interior Designs 1.0
  */
+
+ if (function_exists("get_tipo_cambio")){
+    $cambio = get_tipo_cambio();
+    echo(json_decode($cambio));
+ }
 ?>
 
 <div class="content-vw">
