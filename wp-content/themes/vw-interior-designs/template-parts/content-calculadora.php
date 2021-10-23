@@ -22,10 +22,14 @@
     <div class="entry-content">
       <?php the_content();?>
       <form action="">
-          <label>Tipo de cambio USD 1.00 = GTQ 7.00</label>
+          <label>
+                Tipo de cambio <?php echo $cambio['fecha']?><br> 
+                USD 1.00 = GTQ <?php echo round($cambio['cambio'], 2)?>
+            </label>
           <br><br>
           <label for="">Tipo de conversión<br>
               <select name="tipo" id="" required>
+                  <input type="hidden" name="cambio" value="<?php echo $cambio['cambio']?>">
                   <option value="1"> Dolares a Quetzales</option>
                   <option value="2"> Quetzales a Dolares</option>
               </select>
