@@ -40,7 +40,7 @@
           </label>
           <br><br>
           <label for="">Resultado<br>
-              <span id="resultado">GTQ <?php echo round($cambio['cambio'], 2)?></span>
+              <span id="resultado">USD 1.00 = GTQ <?php echo round($cambio['cambio'], 2)?></span>
           </label>
           <br><br>
           <input class="btn-primary" type="button" value="Convertir">
