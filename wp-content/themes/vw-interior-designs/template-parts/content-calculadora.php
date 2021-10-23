@@ -85,11 +85,11 @@
                 $cantidad = parseFloat($("#cantidad").val());
                 $cambio = parseFloat($("#cambio").val());
                 if($tipo == '1'){
-                    $monto = $cantidad*cambio;
+                    $monto = $cantidad*$cambio;
                     $moneda1 = 'USD';
                     $moneda2 = 'GTQ';
                 }else{
-                    $monto = $cantidad/cambio;
+                    $monto = $cantidad/$cambio;
                     $moneda1 = 'GTQ';
                     $moneda2 = 'USD';
                 }
