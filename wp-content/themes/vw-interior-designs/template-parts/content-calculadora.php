@@ -76,6 +76,10 @@
     .btn-primary:hover{
         background-color: #313040;
     }
+
+    .btn-primary:active{
+        background-color: #9dc02e;
+    }
 </style>
 <script>
     (function($){
