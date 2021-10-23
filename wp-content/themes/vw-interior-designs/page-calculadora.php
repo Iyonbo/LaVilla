@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php $vw_interior_designs_theme_lay = get_theme_mod( 'vw_interior_designs_page_layout','One Column');
             if($vw_interior_designs_theme_lay == 'One Column'){ ?>
                 <?php while ( have_posts() ) : the_post();
-                    get_template_part( 'template-parts/content-page'); 
+                    get_template_part( 'template-parts/content-calculadora'); 
                 endwhile; ?>
         <?php }?>
     </div>
