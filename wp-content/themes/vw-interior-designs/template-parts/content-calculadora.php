@@ -40,7 +40,7 @@
           </label>
           <br><br>
           <label for="">Resultado<br>
-              <span>323</span>
+              <span>GTQ <?php echo round($cambio['cambio'], 2)?></span>
           </label>
           <br><br>
           <input class="btn-primary" type="submit" value="Convertir">
